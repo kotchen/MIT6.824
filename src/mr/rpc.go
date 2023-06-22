@@ -46,8 +46,9 @@ type MapTaskArgs struct {
 }
 
 type MapTaskReply struct {
-	success      bool
-	wordCountMap map[string]int
+	success   bool
+	fileName  string
+	wordCount []KeyValue
 }
 
 type ReduceTaskArgs struct {
